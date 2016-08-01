@@ -1,3 +1,11 @@
+# Directories
+.idea/
+lib/
+
+# Patterns
+*-compiled*
+
+
 # Logs
 logs
 *.log
