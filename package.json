@@ -4,8 +4,10 @@
   "description": "World16 is a Node JS world server for games",
   "main": "lib/library.js",
   "scripts": {
-    "run-debug": "node-debug hyperplug.js",
+    "run-debug": "node-debug lib/world16.min.js",
     "world16": "node lib/world16.min.js",
+    "world16-build": "webpack --mode=build && node lib/world16.min.js",
+    "world16-build-debug": "webpack --mode=build && node-debug lib/world16.min.js",
     "compile": "webpack --mode=build",
     "dev": "webpack --progress --colors --watch --mode=dev",
     "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js",

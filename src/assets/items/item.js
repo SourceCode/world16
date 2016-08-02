@@ -1,6 +1,10 @@
 export class Item {
     constructor() {
-        this.coreType = 'item';
-        this.coreId = '00001';
+        this.guid = '00001';
+        this.primitive = 'item';
+        this.type1 = null;
+        this.typ2 = null;
+        this.desc = null;
+        this.locked = true;
     }
 }
